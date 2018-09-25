@@ -20,6 +20,7 @@
 		D1259A3021580BD6009E0BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1259A2E21580BD6009E0BB6 /* LaunchScreen.storyboard */; };
 		D1259A3B21580BD6009E0BB6 /* TO_DO_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1259A3A21580BD6009E0BB6 /* TO_DO_ListTests.swift */; };
 		D1259A4621580BD6009E0BB6 /* TO_DO_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1259A4521580BD6009E0BB6 /* TO_DO_ListUITests.swift */; };
+		D1F5E9F22159C6900092400C /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1F5E9F12159C6900092400C /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		D1259A4121580BD6009E0BB6 /* TO-DO-ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TO-DO-ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1259A4521580BD6009E0BB6 /* TO_DO_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TO_DO_ListUITests.swift; sourceTree = "<group>"; };
 		D1259A4721580BD6009E0BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F5E9F12159C6900092400C /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		E4804738B44122E9B4557B45 /* Pods_TO_DO_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TO_DO_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3B911B2FB0835BF8F39AF6 /* Pods-TO-DO-List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TO-DO-List.release.xcconfig"; path = "Pods/Target Support Files/Pods-TO-DO-List/Pods-TO-DO-List.release.xcconfig"; sourceTree = "<group>"; };
 		F88F6627C7F59EE7EA138339 /* Pods-TO-DO-ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TO-DO-ListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TO-DO-ListTests/Pods-TO-DO-ListTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				D11CAB6A215858ED00DD7E8C /* SignUpViewController.swift */,
 				D1259A2721580BD5009E0BB6 /* ViewController.swift */,
 				D1259A2921580BD5009E0BB6 /* Main.storyboard */,
+				D1F5E9F12159C6900092400C /* CustomTableViewCell.xib */,
 				D1259A2C21580BD6009E0BB6 /* Assets.xcassets */,
 				D1259A2E21580BD6009E0BB6 /* LaunchScreen.storyboard */,
 				D1259A3121580BD6009E0BB6 /* Info.plist */,
@@ -285,6 +288,7 @@
 				D1259A3021580BD6009E0BB6 /* LaunchScreen.storyboard in Resources */,
 				D11CAB692158188C00DD7E8C /* GoogleService-Info.plist in Resources */,
 				D1259A2D21580BD6009E0BB6 /* Assets.xcassets in Resources */,
+				D1F5E9F22159C6900092400C /* CustomTableViewCell.xib in Resources */,
 				D1259A2B21580BD5009E0BB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

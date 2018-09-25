@@ -8,7 +8,13 @@
 
 import UIKit
 
+class CustomTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var todoLabel: UILabel!
+    
+}
 class ViewController: UIViewController {
+    
     
     
     @IBOutlet weak var tableView: UITableView!
