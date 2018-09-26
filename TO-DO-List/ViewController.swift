@@ -37,7 +37,21 @@ class ViewController: UIViewController, UITableViewDataSource {
             self.todoData.append(field.text!)
         }
         })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {(_) in })
+        
+        alertController.addTextField(configurationHandler: {(textField) in
+            textField.placeholder = "To-Do Item"
+            
+        })
+        
+        alertController.addAction(enterAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3

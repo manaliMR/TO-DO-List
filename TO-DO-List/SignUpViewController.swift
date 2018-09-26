@@ -17,6 +17,10 @@ class SignUpViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "signup", sender: self)
+        }
 
         // Do any additional setup after loading the view.
     }
