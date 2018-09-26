@@ -16,6 +16,7 @@ class CustomTableViewCell: UITableViewCell {
 class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    var todoData = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,13 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     @IBAction func addItem(_ sender: Any) {
+        let alertController = UIAlertController(title: "Add an issue", message: "Please add your item to to-do list", preferredStyle: .alert)
+        
+        let enterAction = UIAlertAction(title:"Enter", style: .default, handler: {(_) in
+        if let field = alertController.textFields![0] as? UITextField {
+            self.todoData.append(field.text!)
+        }
+        })
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
