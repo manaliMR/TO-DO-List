@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let enterAction = UIAlertAction(title:"Enter", style: .default, handler: {(_) in
         if let field = alertController.textFields![0] as? UITextField {
             self.todoData.append(field.text!)
+            self.ref.child("data").child((Auth.auth().currentUser?.uid)!).setValue(["lastItem":field.text!])
             self.tableView.reloadData() 
         }
         })
