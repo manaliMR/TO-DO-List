@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let enterAction = UIAlertAction(title:"Enter", style: .default, handler: {(_) in
         if let field = alertController.textFields![0] as? UITextField {
             self.todoData.append(field.text!)
+            self.tableView.reloadData() 
         }
         })
         
@@ -54,7 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return todoData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
