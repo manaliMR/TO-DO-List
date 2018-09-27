@@ -29,6 +29,19 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "custom")
         ref = Database.database().reference()
+        
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("data").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let value = snapshot.value as? NSDictionary else {
+                print("The user has no data in our database")
+                return
+            }
+            let todoItems = value["todoItem"] as? [String]
+            self.todoData = todoItems!
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     override func didReceiveMemoryWarning() {
