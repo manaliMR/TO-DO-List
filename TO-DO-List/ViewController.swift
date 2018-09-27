@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: "custom") as!
             CustomTableViewCell
-        cell.todoLabel.text = "Hello World"
+        cell.todoLabel.text = todoData[indexPath.row]
         return cell
     }
 }
