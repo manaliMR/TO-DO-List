@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
+
 
 class CustomTableViewCell: UITableViewCell {
     
@@ -17,12 +20,15 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     var todoData = [String]()
+    var ref : DatabaseReference!
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "custom")
+        ref = Database.database().reference()
     }
     
     override func didReceiveMemoryWarning() {
