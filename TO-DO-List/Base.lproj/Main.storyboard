@@ -83,7 +83,7 @@
                                 <rect key="frame" x="100" y="113" width="174" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.51304219182742805" green="0.25112318394341276" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5v-gZ-Ejc">
@@ -110,10 +110,10 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0G-65-G9d">
-                                <rect key="frame" x="155" y="596" width="64" height="36"/>
+                                <rect key="frame" x="16" y="596" width="343" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Log In?"/>
+                                <state key="normal" title="Already have an account? Log In"/>
                                 <connections>
                                     <segue destination="rbP-6b-Ep4" kind="presentation" id="rgm-8T-o1A"/>
                                 </connections>
@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4n-xp-Pjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-562" y="27"/>
+            <point key="canvasLocation" x="-562.39999999999998" y="26.53673163418291"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -188,7 +188,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BMd-qS-VAQ"/>
+        <segue reference="Zr9-Hd-3en"/>
         <segue reference="bz4-ky-i29"/>
     </inferredMetricsTieBreakers>
 </document>

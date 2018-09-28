@@ -88,6 +88,18 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCell.EditingStyle.delete) {
+            todoData.remove(at: indexPath.row)
+            tableView.reloadData()
+            self.ref.child("data").child((Auth.auth().currentUser?.uid)!).setValue(["todoItem:self.todoData"])
+        }
+    }
+    
     
     @IBAction func logout(_ sender: Any) {
         do {
