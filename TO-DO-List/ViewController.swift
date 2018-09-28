@@ -87,5 +87,16 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.todoLabel.text = todoData[indexPath.row]
         return cell
     }
+    
+    
+    @IBAction func logout(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "back", sender: self)
+        } catch {
+            print("No user is logged in")
+        }
+    }
+    
 }
 
